@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1С + IzoGlass — ЛЕГКИЙ учет</title>
+    <script>
+        // Автоматическое перенаправление на первую страницу
+        window.location.href = 'page1.html';
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .redirect-message {
+            background: rgba(255,255,255,0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        h1 { color: #0277bd; margin-bottom: 20px; }
+        a { 
+            color: #0277bd; 
+            text-decoration: none; 
+            border: 2px solid #0277bd;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background: #0277bd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="redirect-message">
+    <h1>Загрузка презентации...</h1>
+    <p>Если перенаправление не произошло автоматически, <a href="page1.html">нажмите здесь</a></p>
+</div>
+
+</body>
+</html>
