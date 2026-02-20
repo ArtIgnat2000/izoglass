@@ -15,16 +15,43 @@
             position: relative; 
             background: rgba(255,255,255,0.95);
         }
-        h1 { font-size: 3.5vw; margin: 0 0 15px 0; color: #0277bd; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); }
-        ol { list-style-position: inside; max-width: 80%; }
-        li { margin: 15px 0; font-size: 2.5vw; }
-        .big-emoji { font-size: 4vw; }
+        h1 { font-size: 2.5rem; margin: 0 0 12px 0; color: #0277bd; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); line-height: 1.2; }
+        ol { list-style-position: inside; max-width: 85%; }
+        li { margin: 12px 0; font-size: 1.4rem; }
+        .big-emoji { font-size: 2.5rem; }
+        
+        /* Мобильная адаптивность */
+        @media (max-width: 768px) {
+            .slide { padding: 15px; }
+            h1 { font-size: 1.8rem; margin-bottom: 8px; }
+            li { font-size: 1rem; margin: 8px 0; }
+            .big-emoji { font-size: 1.8rem; }
+            ol { max-width: 95%; }
+            .navigation { gap: 10px; bottom: 15px; }
+            .nav-btn { padding: 6px 12px; font-size: 12px; }
+            .page-nav-counter { font-size: 12px; padding: 6px 10px; }
+            .page-counter { font-size: 12px; padding: 6px 10px; top: 15px; right: 15px; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5rem; }
+            li { font-size: 0.9rem; }
+            .big-emoji { font-size: 1.5rem; }
+            .contact {
+                font-size: 0.8rem;
+                padding: 8px;
+            }
+            .action-list {
+                font-size: 0.8rem;
+                max-width: 98%;
+            }
+        }
         .contact { 
-            font-size: 2.5vw; 
+            font-size: 1.1rem; 
             background: #ffeb3b; 
-            padding: 15px; 
+            padding: 12px; 
             border-radius: 15px; 
-            margin-top: 20px; 
+            margin-top: 15px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
             line-height: 1.3; 
             text-align: left;
@@ -44,7 +71,7 @@
             align-items: center;
             max-width: 90%;
             text-align: left;
-            font-size: 2.5vw;
+            font-size: 1.1rem;
         }
         .action-number {
             justify-self: end;

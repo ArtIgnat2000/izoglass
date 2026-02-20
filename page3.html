@@ -11,13 +11,31 @@
             width: 100vw; height: 100vh; 
             display: flex; flex-direction: column; 
             justify-content: center; align-items: center; 
-            text-align: center; padding: 40px; 
+            text-align: center; padding: 20px; 
             position: relative; 
             background: rgba(255,255,255,0.95);
         }
-        h1 { font-size: 3.5vw; margin: 0 0 15px 0; color: #0277bd; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); }
-        p { font-size: 2.2vw; line-height: 1.3; margin: 10px 0; }
-        .big-emoji { font-size: 4vw; }
+        h1 { font-size: 2.5rem; margin: 0 0 12px 0; color: #0277bd; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); line-height: 1.2; }
+        p { font-size: 1.3rem; line-height: 1.3; margin: 8px 0; }
+        .big-emoji { font-size: 2.5rem; }
+        
+        /* Мобильная адаптивность */
+        @media (max-width: 768px) {
+            .slide { padding: 15px; }
+            h1 { font-size: 1.8rem; margin-bottom: 8px; }
+            p { font-size: 1rem; }
+            .big-emoji { font-size: 1.8rem; }
+            .navigation { gap: 10px; bottom: 15px; }
+            .nav-btn { padding: 6px 12px; font-size: 12px; }
+            .page-nav-counter { font-size: 12px; padding: 6px 10px; }
+            .page-counter { font-size: 12px; padding: 6px 10px; top: 15px; right: 15px; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5rem; }
+            p { font-size: 0.9rem; }
+            .big-emoji { font-size: 1.5rem; }
+        }
         .navigation {
             position: fixed;
             bottom: 20px;
@@ -72,7 +90,7 @@
 <div class="slide">
     <h1>Магия одной кнопки! <span class="big-emoji">✨</span></h1>
     <p><span class="big-emoji">⬅️</span> IzoGlass ➡️ 1С <span class="big-emoji">🔄</span></p>
-    <p style="font-size: 4vw;">Все документы прыгают сами!</p>
+    <p style="font-size: 2.2rem;">Все документы прыгают сами!</p>
     <p>1 клик — и готово! <span class="big-emoji">🪄😊</span></p>
 </div>
 
